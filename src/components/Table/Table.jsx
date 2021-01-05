@@ -17,10 +17,10 @@ const Table = ({ users, deleteUser, editUser, sendUserToModal }) => {
           {users.map((user) => {
             return (
               <tr key={user.id} onClick={() => sendUserToModal(user.id)}>
-                <td>{user.name}</td>
-                <td>{user.lastName}</td>
-                <td>{user.age}</td>
-                <td>{user.address}</td>
+                <td className={classes.UserTd}>{user.name}</td>
+                <td className={classes.UserTd}>{user.lastName}</td>
+                <td className={classes.UserTd}>{user.age}</td>
+                <td className={classes.UserTd}>{user.address}</td>
                 <td>
                   <span onClick={(e) => e.stopPropagation()}>
                     <button

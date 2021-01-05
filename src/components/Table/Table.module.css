@@ -33,3 +33,7 @@ span{
   background: yellow;
   border-radius: 5px;
 }
+
+.UserTd, button{
+  cursor: pointer;
+}
